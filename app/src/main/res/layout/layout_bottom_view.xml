@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"
+        android:padding="10dp">
+
+    <TextView
+            android:id="@+id/btnList"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_today"
+            android:text="@string/menu_list"
+            style="@style/BottomNavView"/>
+
+    <TextView
+            android:id="@+id/btnTrace"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_search"
+            android:text="@string/menu_trace"
+            style="@style/BottomNavView"/>
+
+    <TextView
+            android:id="@+id/btnPerformance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_sort_by_size"
+            android:text="@string/menu_performance"
+            style="@style/BottomNavView"/>
+
+    <TextView
+            android:id="@+id/btnQuit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_close_clear_cancel"
+            android:text="@string/menu_quit"
+            style="@style/BottomNavView"/>
+
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">OneLayoutManyActivityPrac</string>
+
+    <string name="menu_list">배송리스트</string>
+    <string name="menu_trace">화물추적</string>
+    <string name="menu_performance">실적조회</string>
+    <string name="menu_quit">종료</string>
+</resources>

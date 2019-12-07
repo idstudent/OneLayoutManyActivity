@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.BaseActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvTotalTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="전체"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvSentTitle"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvSentTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="전송"
+            app:layout_constraintStart_toEndOf="@id/tvTotalTitle"
+            app:layout_constraintEnd_toStartOf="@id/tvWaitingTitle"
+            app:layout_constraintTop_toTopOf="@id/tvTotalTitle"/>
+
+        <TextView
+            android:id="@+id/tvWaitingTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="대기"
+            app:layout_constraintStart_toEndOf="@id/tvSentTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvTotalTitle"/>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="35"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvSent"
+            app:layout_constraintTop_toBottomOf="@id/tvTotalTitle"/>
+
+        <TextView
+            android:id="@+id/tvSent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="30"
+            app:layout_constraintStart_toEndOf="@id/tvTotal"
+            app:layout_constraintEnd_toStartOf="@id/tvWaiting"
+            app:layout_constraintTop_toTopOf="@id/tvTotal"/>
+
+        <TextView
+            android:id="@+id/tvWaiting"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:text="5"
+            app:layout_constraintStart_toEndOf="@id/tvSent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvTotal"/>
+
+        <TextView
+            android:id="@+id/btnScan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="스캔"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTotal"/>
+
+        <EditText
+            android:id="@+id/editNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnScan"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
